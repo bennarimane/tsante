@@ -1,0 +1,186 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="colorlib.com">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Poppins:700" rel="stylesheet" />
+    <link href="css_ins/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="s012">
+      <form>
+        <fieldset>
+          <legend>inscription</legend>
+        </fieldset>
+        <div class="inner-form">
+          <header>
+            <div class="travel-type-wrap">
+              <div class="item active">
+                <div class="group-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                      <img src="include/layout/img/icons/doctor.png" alt="">
+                  </svg>
+                </div>
+                <span>MEDECIN</span>
+              </div>
+              <div class="item">
+                <div class="group-icon">
+                
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <img src="include/layout/img/icons/medicine.png" alt="">
+                  </svg>
+                </div>
+                <span>PHARMACIE</span>
+              </div>
+              <div class="item">
+                <div class="group-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                  <img src="include/layout/img/icons/glasses.png" alt="">
+                  </svg>
+                </div>
+                <span>OPTICIEN</span>
+              </div>
+         
+            </div>
+          </header>
+          <div class="main-form" id="main-form">
+            <div class="row">
+              <div class="input-wrap">
+            
+                <div class="input-field">
+                  <label for="username" > le nom de medecin<span style="color: red">*</span></label>
+                  <input placeholder="votre nom"   id="pseudo"   type="text" name="username" />
+                </div>
+              </div>
+            </div>
+             <div class="row">
+              <div class="input-wrap">
+            
+                <div class="input-field">
+                  <label for="adresse" > adresse de medecin<span style="color: red">*</span></label>
+                  <input placeholder="votre adresse"   id="adresse"   type="text" name="adresse" />
+                </div>
+              </div>
+            </div>
+              <div class="row">
+              <div class="input-wrap">
+            
+                <div class="input-field">
+                  <label for="userphone" > numero de téléphone<span style="color: red">*</span></label>
+                  <input   placeholder="votre phone"   id="phone"   type="text" name="userphone" />
+                </div>
+              </div>
+            </div>
+             <div class="row">
+              <div class="input-wrap">
+            
+                <div class="input-field">
+                  <label for="mail" > email de medecin<span style="color: red">*</span></label>
+                  <input  placeholder="votre email"   id="mail"   type="mail" name="mail" />
+                </div>
+              </div>
+            </div>
+       
+        
+     <div class="row second">
+              <div class="input-wrap">
+        
+                <div class="input-field">
+                  <label for="day" >les jours de travail<span style="color: red">*</span></label>
+                <input  placeholder="votre jour de travail"   id="day"   type="text" name="day" />
+                </div>
+              </div>
+              <div class="input-wrap">
+        
+                <div class="input-field">
+                   <label for="time" > horaire<span style="color: red">*</span></label>
+                  <input   placeholder="votre time"   id="time"   type="text" name="time"  />
+                </div>
+              </div>
+              <div class="input-wrap">
+             
+                <div class="input-field">
+                  <label for="sp" >specialite<span style="color: red">*</span></label>
+                  <div class="input-select">
+                       <select class="form-control" id="sp" name="sp">
+                      
+                        <option value="generaliste">generaliste</option>
+                        <option value="cardio">cardio</option>
+                        <option value="generaliste">dantiste</option>
+                        <option value="cardio">cardio</option>
+                        <option value="generaliste">generaliste</option>
+                        <option value="cardio">cardio</option>
+                      </select> 
+                  </div>
+                </div>
+              </div>
+
+            </div>
+                <div class="row">
+              <div class="input-wrap">
+            
+                <div class="input-field">
+                              
+ <label for="image" > fichier<span style="color: red">*</span></label>
+                  <input type="file" name="fileupload" id="avatar">
+                </div>
+              </div>
+            </div>
+                    <div class="row">
+              <div class="input-wrap">
+            
+                <div class="input-field">
+                         <label for="password" > <span style="color: red">*</span>mot de passe</label>
+                        <input type="password" name="password"  placeholder="Votre mot de passe" id="mdp"  />
+                </div>
+              </div>
+            </div>
+                    <div class="row">
+              <div class="input-wrap">
+            
+                <div class="input-field">
+         <label for="repeatpassword" > <span style="color: red">*</span>confirmer votre mot de passe</label>
+                     <input placeholder="Confirmez votre mot de passe" id="mdp2" type="password" name="repeatpassword" />
+                </div>
+              </div>
+            </div>
+            <div class="row last">
+              <input class="btn-search" type="submit"name="submit" value="s'inscrire"/>
+            
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="js/extention/choices.js"></script>
+    <script>
+      const choices = new Choices('[data-trigger]',
+      {
+        searchEnabled: false,
+        itemSelectText: '',
+      });
+
+    </script>
+    <script src="js_ins/extention/flatpickr.js"></script>
+    <script>
+      flatpickr(".datepicker",
+      {
+        dateFormat: "m/d/y"
+      });
+      var btnTypes = document.querySelectorAll('.travel-type-wrap .item')
+      for (let i = 0; i < btnTypes.length; i++)
+      {
+        btnTypes[i].addEventListener('click', function()
+        {
+          for (let i = 0; i < btnTypes.length; i++)
+          {
+            btnTypes[i].classList.remove('active')
+          }
+          btnTypes[i].classList.add('active')
+        })
+      }
+
+    </script>
+  </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

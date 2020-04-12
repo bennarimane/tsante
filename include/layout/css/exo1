@@ -1,0 +1,10 @@
+homme(mohamed).
+homme(jawed).
+homme(nabil).
+femme(sara).
+enfant(belkis).
+aime(nabil,tom_jerry).
+aime(jawed,sara).
+aime(mohamed,sara).
+aime(mohamed,belkis).
+adorable(X):-aime(_,X),(femme(X);homme(X);enfant(X)).

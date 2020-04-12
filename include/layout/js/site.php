@@ -1,0 +1,6 @@
+$(function){
+    $("$registor").ajaxform
+
+
+
+}

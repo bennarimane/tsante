@@ -1,0 +1,45 @@
+table{
+	width: 100%;
+
+}
+td{
+	padding:  20px;
+
+}
+.layer {
+	background-color:#fff;
+	padding: 20px;
+	height:363px;
+   -webkit-box-shadow: 10px 6px 32px -1px rgba(0,0,0,0.57); 
+box-shadow: 10px 6px 32px -1px rgba(0,0,0,0.57);
+}
+.wb_Text1 {
+
+left:273px;
+top:37px;
+
+}
+.wb_Text1 span {
+font-family: "Arial Black", Gadget, sans-serif;
+font-size: 25px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #5FC1ED;
+font-weight: 700;
+font-style: italic;
+font-variant: normal;
+text-transform: uppercase;
+
+}
+.wb_Text2 {
+
+left:273px;
+top:83px;
+
+
+}
+.wb_Text2 span {
+color:#000000;
+font-family:Arial;
+font-size:13px;
+}

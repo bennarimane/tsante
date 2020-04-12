@@ -1,0 +1,30 @@
+/*SHRINK*/
+.shrink img {
+	border-style:solid;
+	border-color: white;
+  height: 600px;
+  width: 600px;
+ 
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.shrink img:hover {
+  width: 700px;
+  height: 600px;
+}
+.content {
+  position: absolute; /* Position the background text */
+  bottom:0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color:white; /* Grey text */
+  width: 20%; /* Full width */
+  padding: 30px; /* Some padding */
+}
+.content h1 {
+	color:white;
+}
